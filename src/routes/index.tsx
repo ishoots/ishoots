@@ -37,15 +37,24 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Every smile. Every emotion. Every celebration. Beautifully captured forever.",
+          "Every smile. Every emotion. Every celebration. Beautifully captured forever with editorial luxury quality.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ishoots-eta.vercel.app/" },
+      { property: "og:image", content: "https://ishoots-eta.vercel.app/og-image.jpg" },
+      { property: "og:image:secure_url", content: "https://ishoots-eta.vercel.app/og-image.jpg" },
+      { property: "og:image:width", content: "1376" },
+      { property: "og:image:height", content: "768" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:alt", content: "ISHOOTS — Luxury Photography & Visual Productions" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "ISHOOTS — Cinematic Photography & Videography" },
       {
         name: "twitter:description",
-        content: "Premium wedding, event & brand cinematography.",
+        content: "Premium wedding, event & brand cinematography with editorial quality.",
       },
+      { name: "twitter:image", content: "https://ishoots-eta.vercel.app/og-image.jpg" },
+      { name: "twitter:image:alt", content: "ISHOOTS — Luxury Photography & Visual Productions" },
     ],
     scripts: [
       {
