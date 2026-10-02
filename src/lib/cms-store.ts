@@ -133,7 +133,7 @@ export interface CMSData {
 
 export const DEFAULT_CMS_DATA: CMSData = {
   global: {
-    faviconUrl: "/favicon.ico",
+    faviconUrl: "/logos/Profile Pic Logo.PNG",
     siteName: "ISHOOTS",
   },
   hero: {

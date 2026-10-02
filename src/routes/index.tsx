@@ -16,7 +16,7 @@ import g6 from "@/assets/g6.jpg";
 import p1 from "@/assets/p1.jpg";
 import p2 from "@/assets/p2.jpg";
 import p3 from "@/assets/p3.jpg";
-import araneaLogo from "@/assets/aranea-den-logo.jpeg";
+// Removed external logos - using official logos only
 
 import {
   useCMSData, saveContactSubmission, CMSData, GalleryItem, ReelItem, PricingPackage,
@@ -143,10 +143,12 @@ function Navbar({ footerData }: { footerData: FooterConfig }) {
       }`}
     >
       <div className="mx-auto flex max-w-[1800px] w-full items-center justify-between px-6 md:px-10 lg:px-12">
-        <button onClick={() => go("home")} className="group flex items-center gap-2">
-          <span className="font-display text-2xl tracking-widest text-[#121110]">
-            {footerData.logoText || "I"}<span className="gold-text">{footerData.logoHighlight || "SHOOTS"}</span>
-          </span>
+        <button onClick={() => go("home")} className="group flex items-center gap-2 focus:outline-none" aria-label="ISHOOTS Home">
+          <img
+            src="/logos/Logo Transparent.png"
+            alt="ISHOOTS"
+            className="h-9 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
         </button>
 
         <nav className="hidden items-center gap-9 lg:flex">
@@ -1138,9 +1140,13 @@ function Footer({ data, contact }: { data: FooterConfig; contact: ContactInfo })
     <footer className="relative border-t border-[#99000D]/20 bg-[#121110] text-white py-16">
       <div className="mx-auto grid max-w-[1800px] w-full gap-12 px-6 md:grid-cols-4 md:px-10 lg:px-12">
         <div className="md:col-span-2">
-          <p className="font-display text-3xl tracking-widest text-white">
-            {data.logoText || "I"}<span className="gold-text">{data.logoHighlight || "SHOOTS"}</span>
-          </p>
+          <button onClick={() => go("home")} className="focus:outline-none block text-left" aria-label="ISHOOTS Home">
+            <img
+              src="/logos/Logo Transparent.png"
+              alt="ISHOOTS"
+              className="h-12 md:h-14 w-auto object-contain brightness-110 drop-shadow-md"
+            />
+          </button>
           <p className="mt-4 max-w-sm text-sm text-white/70">
             {data.description}
           </p>
@@ -1185,12 +1191,7 @@ function Footer({ data, contact }: { data: FooterConfig; contact: ContactInfo })
             className="group inline-flex items-center gap-2.5 transition hover:opacity-100"
           >
             <span className="text-white/50 group-hover:text-white/80 transition-colors">Made by</span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#99000D]/40 bg-white/5 px-3 py-1 text-xs text-white/90 transition-all duration-300 group-hover:border-[#99000D] group-hover:bg-[#99000D]/20 group-hover:text-white">
-              <img
-                src={araneaLogo}
-                alt="Aranea Den Logo"
-                className="h-5 w-5 rounded-full object-cover shrink-0 border border-[#99000D]/40"
-              />
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[#99000D]/40 bg-white/5 px-3 py-1 text-xs text-white/90 transition-all duration-300 group-hover:border-[#99000D] group-hover:bg-[#99000D]/20 group-hover:text-white">
               <span className="font-medium tracking-wide">Aranea Den</span>
             </span>
           </a>

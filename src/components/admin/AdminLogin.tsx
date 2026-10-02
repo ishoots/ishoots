@@ -22,14 +22,16 @@ export function AdminLogin({ onLogin }: { onLogin?: (email: string, pass: string
     <div className="flex min-h-screen items-center justify-center bg-[#0b0b0b] px-4 font-sans text-white">
       <div className="w-full max-w-md space-y-8 rounded-3xl border border-gold/20 bg-[#111111]/80 p-8 shadow-luxury backdrop-blur">
         <div className="text-center">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-gold/40 bg-gold/10 text-gold">
-            <Lock size={26} />
-          </div>
-          <h1 className="font-display text-3xl tracking-wide text-white">
-            ISHOOTS <span className="gold-text italic">CMS</span>
+          <img
+            src="/logos/Logo Transparent.png"
+            alt="ISHOOTS"
+            className="h-10 mx-auto mb-5 object-contain"
+          />
+          <h1 className="font-display text-2xl tracking-wide text-white">
+            Admin <span className="gold-text italic">CMS</span>
           </h1>
           <p className="mt-2 text-xs tracking-widest uppercase text-white/50">
-            Admin Authentication Panel
+            Authentication Panel
           </p>
         </div>
 

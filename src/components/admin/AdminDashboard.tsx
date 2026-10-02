@@ -98,9 +98,10 @@ export function AdminDashboard() {
       >
         <div>
           <div className="mb-8 flex items-center justify-between">
-            <span className="font-display text-xl tracking-widest text-white">
-              I<span className="gold-text">SHOOTS</span> <span className="text-xs text-gold">CMS</span>
-            </span>
+            <div className="flex items-center gap-2">
+              <img src="/logos/Logo Transparent.png" alt="ISHOOTS" className="h-7 w-auto object-contain" />
+              <span className="text-xs text-gold font-medium uppercase tracking-wider">CMS</span>
+            </div>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="rounded-lg p-2 text-white/60 hover:text-white hover:bg-white/10"
@@ -157,9 +158,10 @@ export function AdminDashboard() {
       <aside className="hidden lg:flex lg:w-64 border-r border-gold/15 bg-[#111111] p-6 flex-col justify-between shrink-0">
         <div>
           <div className="mb-8 flex items-center justify-between">
-            <span className="font-display text-xl tracking-widest text-white">
-              I<span className="gold-text">SHOOTS</span> <span className="text-xs text-gold">CMS</span>
-            </span>
+            <div className="flex items-center gap-2">
+              <img src="/logos/Logo Transparent.png" alt="ISHOOTS" className="h-7 w-auto object-contain" />
+              <span className="text-xs text-gold font-medium uppercase tracking-wider">CMS</span>
+            </div>
           </div>
 
           <nav className="space-y-1.5">

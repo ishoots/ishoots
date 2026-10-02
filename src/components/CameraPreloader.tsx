@@ -283,15 +283,19 @@ export function CameraPreloader({ onComplete }: CameraPreloaderProps) {
         {/* LOGO & TYPOGRAPHY REVEAL */}
         <div className="mt-6 flex flex-col items-center text-center px-4">
           {/* ISHOOTS LOGO */}
-          <h1
-            className={`font-display text-3xl sm:text-4xl tracking-[0.35em] text-[#121110] transition-all duration-700 ${
+          <div
+            className={`transition-all duration-700 ${
               currentIdx >= 5
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-4"
+                ? "opacity-100 translate-y-0 scale-100"
+                : "opacity-0 translate-y-4 scale-95"
             }`}
           >
-            I<span className="text-[#99000D]">SHOOTS</span>
-          </h1>
+            <img
+              src="/logos/Logo Transparent.png"
+              alt="ISHOOTS"
+              className="h-12 sm:h-14 md:h-16 w-auto object-contain drop-shadow-sm"
+            />
+          </div>
 
           {/* TAGLINE */}
           <p
