@@ -31,20 +31,20 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "ISHOOTS is a premium photography and cinematic videography studio capturing weddings, events, car reveals, birthdays, restaurant launches and corporate stories with editorial quality.",
+          "ISHOOTS is a luxury photography & cinematic videography studio capturing weddings, celebrations, and brand stories with editorial quality.",
       },
       { property: "og:title", content: "ISHOOTS — Cinematic Photography & Videography" },
       {
         property: "og:description",
         content:
-          "Every smile. Every emotion. Every celebration. Beautifully captured forever with editorial luxury quality.",
+          "ISHOOTS is a luxury photography & cinematic videography studio capturing weddings, celebrations, and brand stories with editorial quality.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://ishoots-eta.vercel.app/" },
       { property: "og:image", content: "https://ishoots-eta.vercel.app/og-image.jpg" },
       { property: "og:image:secure_url", content: "https://ishoots-eta.vercel.app/og-image.jpg" },
-      { property: "og:image:width", content: "1376" },
-      { property: "og:image:height", content: "768" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:alt", content: "ISHOOTS — Luxury Photography & Visual Productions" },
       { name: "twitter:card", content: "summary_large_image" },
